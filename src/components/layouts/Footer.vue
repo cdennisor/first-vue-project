@@ -6,7 +6,7 @@
                <h3 class="text-center sm:text-left mb-5 text-2xl font-semibold tracking-wide">Datos de contacto</h3>
                <ul>                  
                   <li v-for="(element,index) in contact" :key="index" class="flex justify-center sm:justify-start gap-4 items-center mb-3">
-                     <img :src="`@/assets/icons/${ element.icon }`" alt="icono" class="w-[30px] h-[30px] bg-white p-1 
+                     <img :src="element.icon" alt="icono" class="w-[30px] h-[30px] bg-white p-1 
                         rounded-full">
                      <p>{{ element.label }}</p>
                   </li>
@@ -38,10 +38,13 @@
 <script setup>
    import Logo from '@/components/UI/Logo.vue';
    import { ref } from 'vue';
+
+   import emailIcon from '@/assets/icons/email.svg';
+   import wasapIcon from '@/assets/icons/whatsApp.svg';
+   import locationIcon from '@/assets/icons/location.svg';
    const contact = ref([
-      {icon:"/email.svg",label:"cdennisor17@gmail.com"},
-      {icon:"/whatsApp.svg",label:"+51916595794"},
-      {icon:"/location.svg",label:"Lima - Perú"},
+      {icon:emailIcon,label:"cdennisor17@gmail.com"},
+      {icon:wasapIcon,label:"+51916595794"},
+      {icon:locationIcon,label:"Lima - Perú"},
    ]);
-//#002f4b
 </script>

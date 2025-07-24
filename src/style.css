@@ -11,28 +11,7 @@
   --customHeader: #E9F1FA;
   --lightSecondary: #a56eff;
 }
-/* .swiper {
-  width: 100%;
-  height: 100%;
-}
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-
-  /* Center slide text vertically */
-  /*display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 .swiper {
   width: 100%;
   height: 100%;
@@ -147,20 +126,12 @@
 }
 
 .portfolio-card:hover {
-  /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); */
   transform: translateY(-3%);
 }
 
 .portfolio-card__description h3 {
   color: var(--secondary);
 }
-
-/* .portfolio-card__description p {
-  color: #6a6a6a;
-  font-size: 14px;
-  margin-bottom: 5px;
-  text-align: center;
-} */
 
 .portfolio-card__description a {
   display: inline-block;
@@ -179,15 +150,6 @@
   color: white;
   border: 1px solid var(--primaryDark);
 }
-
-/* .dark .portfolio-card__description a:hover {
-  background-color: var(--primaryDark);
-}
-
-.portfolio-card__description a:hover {
-  background-color: var(--primaryLight);
-  color: #fff;
-} */
 
 .portfolio-card:hover .layer {
    transform: scale(1.1);

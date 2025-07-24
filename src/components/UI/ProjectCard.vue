@@ -45,10 +45,4 @@
          default: null
       },                                      
    })
-   // function handleClick(e) {
-   //    if (!props.link) {
-   //       e.preventDefault(); // Usa el evento pasado correctamente
-   //       //console.log('Link no disponible');
-   //    }
-   // }
 </script>

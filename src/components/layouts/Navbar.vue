@@ -36,7 +36,6 @@
    </header>
 </template>
 <script setup>
-   //import { Icon } from '@iconify/vue';
    import Logo from '@/components/UI/Logo.vue';
    import {ref, watch, onBeforeUnmount} from 'vue';
    import NavTheme from '@/components/UI/NavTheme.vue';
@@ -55,38 +54,6 @@
          section.scrollIntoView({behavior : 'smooth'});
       }
    } 
-/*const scrollToSection = (href) => {
-  isMenuOpen.value = false;
-  const section = document.querySelector(href);
-  const headerHeight = document.querySelector('header')?.offsetHeight || 80; // Cambia si tu cabecera no es <header>
-
-  if (section) {
-    const top = section.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-    window.scrollTo({
-      top,
-      behavior: 'smooth',
-    });
-  }
-};*/
-   // Ocultar scroll del body cuando el menú móvil está abierto
-   /*watch(isMenuOpen, (newVal) => {
-      if (!newVal) { 
-         //document.body.style.overflow = 'hidden' // Ocultar scroll del body
-         // Hacer scroll a la parte superior donde está el menú
-         if (window.scrollY > 50) { // solo si se ha hecho scroll hacia abajo
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-         }
-      }  // else {
-         // document.body.style.overflow = '' // Limpiar/Restaurar scroll
-      // }
-   })
-
-   // Limpiar al desmontar componente (buena práctica)
-   // onBeforeUnmount(() => {
-   //    document.body.style.overflow = ''
-   // })*/
-
 </script>
 
 <style scoped>
@@ -98,12 +65,4 @@
    .scrollbar-hide::-webkit-scrollbar {
       display: none; /* Chrome, Safari, Edge */
    }
-
-   /**<nav
-  class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#111827] bg-opacity-95 transition-transform duration-500 ease-in-out transform md:relative md:translate-x-0 md:bg-transparent md:flex md:flex-row"
-  :class="{
-    'translate-x-0': isMenuOpen,
-    'translate-x-full': !isMenuOpen
-  }"
-> */
 </style>

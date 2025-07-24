@@ -29,31 +29,16 @@
             <swiper-slide v-for="(element, index) in projects" :key="index" class="swiper-slide-wrapper">
                <ProjectCard 
                   :title = "element.name"
-                  :image = "element.img"
+                  :image = "getImage(element.img)"
                   :tags = "element.tag"
                   :link = "element.link"                  
                />
             </swiper-slide>
-
-            <!-- <template #container-end>
-               <div class="autoplay-progress">
-                  <svg viewBox="0 0 48 48" ref="progressCircle">
-                     <circle cx="24" cy="24" r="20"></circle>
-                  </svg>
-                  <span ref="progressContent" class="text-primaryLight dark:text-primaryDark"></span>
-               </div>
-            </template> -->
          </swiper>
       </div>
    </section>
 </template>
 <script>
-//:effect="'fade'" :centeredSlides="true"
-/**            :autoplay="{
-               delay: 2500,
-               disableOnInteraction: false,
-               pauseOnMouseEnter: true,
-            }" */
    import { ref } from 'vue';
    import SectionHeader from '@/components/UI/SectionHeader.vue';
    import ProjectCard from '@/components/UI/ProjectCard.vue';
@@ -86,39 +71,46 @@
          const nextEl = ref(null);
          const paginationEl = ref(null);
 
+         const imageModules = import.meta.glob('@/assets/images/*', { eager: true });
+
+         function getImage(filename) {
+            const mod = imageModules[`/src/assets/images/${filename}`];
+            return mod?.default || ''; // si el nombre(url) está mal o no existe, mod será undefined.
+         }
+         
          const projects = ref([
             {
-               img: "@/assets/images/facial.webp",
+               img: "facial.webp",
                name: "Control de asistencia con Reconocimiento facial",
                tag: ["Filament","Python","MySql"],
                link: "https://www.youtube.com/watch?v=iFhcXuwOhjE",
             },
             {
-               img: "@/assets/images/powerBI.webp",
+               img: "powerBI.webp",
                name: "Análisis de datos con Power BI",
                tag: ["Power BI","Excel","MySql"],
                link: "https://app.powerbi.com/view?r=eyJrIjoiZjc0MWRjODQtZThiZi00OWZlLWJmZmQtYTIwMjUxMzYwNDFkIiwidCI6ImI0YTQwNTQ1LTc3NzktNGIzOC1hZmY3LTFmMTczOGY4MDg0MCIsImMiOjR9",
             },
             {
-               img: "@/assets/images/watson.webp",
+               img: "watson.webp",
                name: "Chatbots con IBM Watson Assistant",
                tag: ["Watson Assistant"],
                link: "https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-95495053-d25a-428b-ba79-f2b6aeeb88eb%3A%3A4aab8a95-23b9-41f7-8bb1-d10c7f417068&integrationID=dc8471ac-9c2d-4f40-a4d9-1022b4a747e9&region=au-syd&serviceInstanceID=95495053-d25a-428b-ba79-f2b6aeeb88eb",
             },
             {
-               img: "@/assets/images/qr.webp",
+               img: "qr.webp",
                name: "Control de asistencia con código QR",
                tag: ["Filament","MySql","VB.NET"],
                link: "https://www.youtube.com/watch?v=ox4hx__OtKk",
             },
             {
-               img: "@/assets/images/botpress.webp",
+               img: "botpress.webp",
                name: "Integración de ChatBots con Telegram",
                tag: ["Botpress","Telegram"],
                link: "https://t.me/dennisor_bot",
             },
             {
-               img: "@/assets/images/maui.webp",
+               img: "maui.webp",
                name: "App mobile: Creación y consumo de Rest API",
                tag: ["Express JS",".NET Maui"],
                link: "https://www.youtube.com/watch?v=wrK_c5fFlFQ",
@@ -137,6 +129,8 @@
             nextEl,
             paginationEl,
             modules: [Autoplay, Pagination, Navigation, Mousewheel, Keyboard],
+
+            getImage,
          };
       },
    };

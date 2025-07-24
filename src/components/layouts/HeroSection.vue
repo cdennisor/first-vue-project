@@ -18,7 +18,6 @@
                resolver necesidades reales de tu empresa o negocio.
             </p>
             <div class="mt-6 gap-3 flex flex-col md:flex-row items-center md:justify-center lg:justify-start md:gap-6">
-               <!-- <Button label="Por qué yo?" class="rounded-full w-full sm:w-48"/> -->
                <a href="/src/assets/cv.pdf" download="cv.pdf" class="font-semibold text-lg w-full sm:w-48 h-[48px] rounded-full border-2 border-primaryLight dark:border-primaryDark
                   hover:scale-105 flex justify-center items-center text-primaryLight dark:text-primaryDark" >
                   <Icon icon="line-md:download-loop" class="text-3xl"/>
@@ -30,8 +29,6 @@
             <figure  class="flex w-full h-96 min-h-[24rem] lg:min-h-[none] lg:w-full items-center justify-center lg:justify-end rounded-full relative">
                <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 
                   from-[#645be288] to-primaryLight dark:from-[#00bbd488] dark:to-primaryDark blur-2xl"></div>
-               <!-- <div class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 lg:right-3 xs:right-[17.5%]  rounded-full shadow-lg border 
-                border-primaryLight dark:border-primaryDark"> -->
                 <div class="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] p-2 rounded-full shadow-lg border border-primaryLight dark:border-primaryDark">
                   <img src="@/assets/images/imghero.jpeg" alt="imagen perfil" width="500" height="auto" loading="lazy" 
                      class="w-full h-full rounded-full object-cover"/>
@@ -47,60 +44,3 @@
       </svg>
    </section>
 </template>
-<script setup>
-   //import Button from '@/components/UI/Button.vue';
-/*
-import { ref, onMounted } from 'vue';
-
-const fullText = 'Ing. de Software con IA';
-const displayedText = ref('');
-let isDeleting = false;
-let index = 0;
-
-const typingSpeed = 80;
-const pauseTime = 1500; // tiempo de pausa al terminar de escribir
-
-function typeWriter() {
-  if (!isDeleting) {
-    // Escribiendo
-    displayedText.value = fullText.substring(0, index + 1);
-    index++;
-
-    if (index === fullText.length) {
-      // Llegó al final, espera y luego empieza a borrar
-      setTimeout(() => {
-        isDeleting = true;
-        typeWriter();
-      }, pauseTime);
-      return;
-    }
-  } else {
-    // Borrando
-    displayedText.value = fullText.substring(0, index - 1);
-    index--;
-
-    if (index === 0) {
-      isDeleting = false;
-    }
-  }
-
-  setTimeout(typeWriter, typingSpeed);
-}
-
-onMounted(() => {
-  typeWriter();
-});*/
-</script>
-
-<!-- <style scoped>
-.blinking-cursor {
-  animation: blink 1s step-end infinite;
-  color: inherit;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-</style> -->

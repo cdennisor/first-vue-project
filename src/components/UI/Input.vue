@@ -27,7 +27,6 @@ import { ref, computed } from 'vue';
       id: { type: String, required: true },
       label: { type: String, required: true },
       type: { type: String, default: 'text' },
-      //isTextarea: { type:Boolean, default:false },
       placeholder: { type: String, default: '' },
       rows: { type: Number, default: 5 }, // solo para textareas
    })
@@ -58,5 +57,4 @@ import { ref, computed } from 'vue';
    .dark .focus-custom {
       color: #00abe4;
    }
-   /**:autocomplete="type === 'text' ? 'off' : undefined" */
 </style>
