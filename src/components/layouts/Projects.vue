@@ -88,37 +88,37 @@
 
          const projects = ref([
             {
-               img: "src/assets/images/facial.webp",
+               img: "@/assets/images/facial.webp",
                name: "Control de asistencia con Reconocimiento facial",
                tag: ["Filament","Python","MySql"],
                link: "https://www.youtube.com/watch?v=iFhcXuwOhjE",
             },
             {
-               img: "src/assets/images/powerBI.webp",
+               img: "@/assets/images/powerBI.webp",
                name: "Análisis de datos con Power BI",
                tag: ["Power BI","Excel","MySql"],
                link: "https://app.powerbi.com/view?r=eyJrIjoiZjc0MWRjODQtZThiZi00OWZlLWJmZmQtYTIwMjUxMzYwNDFkIiwidCI6ImI0YTQwNTQ1LTc3NzktNGIzOC1hZmY3LTFmMTczOGY4MDg0MCIsImMiOjR9",
             },
             {
-               img: "src/assets/images/watson.webp",
+               img: "@/assets/images/watson.webp",
                name: "Chatbots con IBM Watson Assistant",
                tag: ["Watson Assistant"],
                link: "https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Fau-syd.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-95495053-d25a-428b-ba79-f2b6aeeb88eb%3A%3A4aab8a95-23b9-41f7-8bb1-d10c7f417068&integrationID=dc8471ac-9c2d-4f40-a4d9-1022b4a747e9&region=au-syd&serviceInstanceID=95495053-d25a-428b-ba79-f2b6aeeb88eb",
             },
             {
-               img: "src/assets/images/qr.webp",
+               img: "@/assets/images/qr.webp",
                name: "Control de asistencia con código QR",
                tag: ["Filament","MySql","VB.NET"],
                link: "https://www.youtube.com/watch?v=ox4hx__OtKk",
             },
             {
-               img: "src/assets/images/botpress.webp",
+               img: "@/assets/images/botpress.webp",
                name: "Integración de ChatBots con Telegram",
                tag: ["Botpress","Telegram"],
                link: "https://t.me/dennisor_bot",
             },
             {
-               img: "src/assets/images/maui.webp",
+               img: "@/assets/images/maui.webp",
                name: "App mobile: Creación y consumo de Rest API",
                tag: ["Express JS",".NET Maui"],
                link: "https://www.youtube.com/watch?v=wrK_c5fFlFQ",
