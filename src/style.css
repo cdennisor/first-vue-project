@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primaryLight: #655be2;
+  --primaryDark: #00abe4;
+  --secondary: #f59e0b;
+  --pinky: #ec4899;
+  --customBlack: #111827;
+  --customHeader: #E9F1FA;
+  --lightSecondary: #a56eff;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+.autoplay-progress circle {
+  stroke: var(--primaryLight); 
+}
+
+.dark .autoplay-progress circle {
+  stroke: var(--primaryDark);
+}
+
+
+
+.swiper-slide-content {
+  /* overflow: hidden; */
+  border-radius: 25px;
+  padding: 13px 10px;
+  height: 100%;
+}
+
+/* Cards */
+.portfolio-card {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+}
+
+.card-image-wrapper, .portfolio-card__description {
+   padding: 14px;
+   width: 100%;
+}
+
+.card-image-wrapper {
+   height: 100%
+}
+
+.portfolio-card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.portfolio-card .layer {
+   background: linear-gradient(to top, #a56eff, rgba(0,0,0,0));
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 80%;
+   opacity: 0;
+   transition: 0.3s;
+}
+
+.dark .portfolio-card .layer {
+   background: linear-gradient(to top, #0595c591, rgba(0,0,0,0));
+}
+
+.portfolio-card__description {
+   cursor: default;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  padding: 14px;
+  bottom: -50%;
+  opacity: 0;
+  transition: 0.5s bottom, 1.75s opacity;
+}
+
+.portfolio-card:hover {
+  /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); */
+  transform: translateY(-3%);
+}
+
+.portfolio-card__description h3 {
+  color: var(--secondary);
+}
+
+/* .portfolio-card__description p {
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: center;
+} */
+
+.portfolio-card__description a {
+  display: inline-block;
+  background-color: #4034e7;
+  padding: 3px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid var(--primaryLight);
+  border-radius: 10px;
+  transition: all 400ms ease;
+}
+
+.dark .portfolio-card__description a {
+   background-color: #0086b3;
+  color: white;
+  border: 1px solid var(--primaryDark);
+}
+
+/* .dark .portfolio-card__description a:hover {
+  background-color: var(--primaryDark);
+}
+
+.portfolio-card__description a:hover {
+  background-color: var(--primaryLight);
+  color: #fff;
+} */
+
+.portfolio-card:hover .layer {
+   transform: scale(1.1);
+}
+
+.portfolio-card:hover > .layer {
+   opacity: 1;
+}
+
+.portfolio-card:hover > .portfolio-card__description {
+   bottom: 0;
+   opacity: 1;
+}
+/* End Cards */
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+
+.custom-prev {
+  left: 0;
+}
+
+.custom-next {
+  right: 0;
+}
+
+.custom-pagination {
+   position: absolute;
+  text-align: center;
+}
+.custom-pagination .swiper-pagination-bullet{
+  background-color: #645be288; /* color cuando está activo */
+  opacity: 1;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primaryLight); /* color cuando está activo */
+  opacity: 1;
+}
+
+.dark .custom-pagination .swiper-pagination-bullet {
+  background-color: #00bbd488; /* tu color personalizado */
+  opacity: 0.6;
+}
+
+.dark .custom-pagination .swiper-pagination-bullet-active{
+   background-color: var(--primaryDark);
+}
+
+/***/
