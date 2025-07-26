@@ -23,11 +23,10 @@
          <!-- Mobile toogle button -->
          <div class="md:hidden z-30">
             <button type="button" class="block focus:outline-none text-primaryLight" @click="isMenuOpen = !isMenuOpen">
-               <span v-if="isMenuOpen" class="text-5xl text-primaryLight dark:text-white 
-                  ">
+               <span v-if="isMenuOpen" class="text-4xl text-primaryLight dark:text-white ">
                   <Icon icon="line-md:menu-to-close-transition"/>
                </span>
-               <span v-else class="text-5xl dark:text-white">
+               <span v-else class="text-4xl dark:text-white">
                   <Icon icon="line-md:close-to-menu-transition"/>
                </span>
             </button>

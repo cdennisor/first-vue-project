@@ -20,10 +20,10 @@
                <a href="https://github.com/cdennisor" class="text-gray-500 hover:text-gray-200 transition-all duration-300 hover:scale-110">
                   <Icon icon="mdi:github" style="font-size: 2.5rem;"/>
                </a>
-               <a href="facebook.com/sinned.orcd" class="text-gray-500 rounded-full hover:text-gray-200 transition-all duration-300 hover:scale-110">
+               <a href="https://www.facebook.com/sinned.orcd/" class="text-gray-500 rounded-full hover:text-gray-200 transition-all duration-300 hover:scale-110">
                   <Icon icon="ic:baseline-facebook" style="font-size: 2.5rem;"/>
                </a>
-               <a href="www.youtube.com/@thingsofworld5838" class="text-gray-500 hover:text-gray-200 transition-all duration-300 hover:scale-110">
+               <a href="https://www.youtube.com/@thingsofworld5838" class="text-gray-500 hover:text-gray-200 transition-all duration-300 hover:scale-110">
                   <Icon icon="line-md:youtube-filled" style="font-size: 2.5rem;"/>
                </a>                        
             </div>
