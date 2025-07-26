@@ -18,10 +18,10 @@
                resolver necesidades reales de tu empresa o negocio.
             </p>
             <div class="mt-6 gap-3 flex flex-col md:flex-row items-center md:justify-center lg:justify-start md:gap-6">
-               <a href="@/assets/myCV.pdf" download="mycv.pdf" class="font-semibold text-lg w-full sm:w-48 h-[48px] rounded-full border-2 border-primaryLight dark:border-primaryDark
+               <a href="/assets/myCV.pdf" download="mycv.pdf" class="font-semibold text-lg w-full sm:w-48 h-[48px] rounded-full border-2 border-primaryLight dark:border-primaryDark
                   hover:scale-105 flex justify-center items-center text-primaryLight dark:text-primaryDark" >
                   <Icon icon="line-md:download-loop" class="text-3xl"/>
-                  <span class="ml-2">Curriculum</span>
+                  <span class="ml-2">Descargar CV</span>
                </a>
             </div>
          </header>
